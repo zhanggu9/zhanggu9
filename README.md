@@ -35,7 +35,40 @@
 > 실계좌 코드는 키·계좌·전략 파라미터 보호를 위해 일부 비공개이며, 설계 기록으로 대신 공개합니다.
 > LIMSON은 한국투자증권 공식 저장소를 기반으로 확장한 프로젝트로, 원본 커밋 이력을 그대로 보존했습니다.
 
-### 1. [KORStockScan](https://github.com/zhanggu9/KORStockScan-main) — 실계좌 스캘핑 자동매매 엔진
+### 1. [LIMSON](https://github.com/zhanggu9/limson) — 전략 빌더 · LEAN 백테스트 플랫폼
+
+`2026` `개인 프로젝트` `백엔드 · 인프라` `+35 커밋 / +2,400줄`
+
+> 한국투자증권 공식 전략 빌더·LEAN 백테스터를 자체 OHLCV DB와 저사양 클라우드 환경에 맞게 확장
+
+**📌 문제** — 원본은 KIS API로 시세를 받아 백테스트해 느리고 호출 제한이 있으며, 42GB짜리 LEAN 엔진은 1GB 메모리 서버(t3.micro)에서 돌릴 수 없었습니다.
+
+**✅ 해결**
+
+- 자체 수집 **PostgreSQL OHLCV 데이터 공급자** 추가 (식별자 검증으로 SQL 인젝션 차단)
+- 불완전한 벤치마크 곡선을 결과에서 제외하고 단계별 실행 시간 로깅 → 백테스트 결과 신뢰성 확보
+- **웹은 EC2, 백테스트는 로컬 PC**에서 실행하고 SSH 역터널로 연결하는 하이브리드 구조, nginx 단일 포트 + systemd 배포 자동화
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![LEAN](https://img.shields.io/badge/QuantConnect%20LEAN-F5AE29?style=flat)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![nginx](https://img.shields.io/badge/nginx-009639?style=flat&logo=nginx&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat&logo=amazonec2&logoColor=white)
+
+### 2. [lumina](https://github.com/zhanggu9/lumina-backup) — 금융 AI 에이전트 웹앱
+
+`2026` `AI퀀트 과정` `풀스택`
+
+> ReAct 챗봇, LightGBM/MLP 퀀트 신호·백테스트, Qdrant RAG 문서 검색을 하나의 웹앱으로 — 화면부터 API·배포까지 풀스택 구현
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+### 3. [KORStockScan](https://github.com/zhanggu9/KORStockScan-main) — 실계좌 스캘핑 자동매매 엔진
 
 `2026` `1인 개발` `설계 · 개발 · 운영` `실계좌 운용 중`
 
@@ -59,28 +92,7 @@
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black)
 ![Kiwoom](https://img.shields.io/badge/Kiwoom%20REST%2FWS-0A5BD8?style=flat)
 
-### 2. [LIMSON](https://github.com/zhanggu9/limson) — 전략 빌더 · LEAN 백테스트 플랫폼
-
-`2026` `개인 프로젝트` `백엔드 · 인프라` `+35 커밋 / +2,400줄`
-
-> 한국투자증권 공식 전략 빌더·LEAN 백테스터를 자체 OHLCV DB와 저사양 클라우드 환경에 맞게 확장
-
-**📌 문제** — 원본은 KIS API로 시세를 받아 백테스트해 느리고 호출 제한이 있으며, 42GB짜리 LEAN 엔진은 1GB 메모리 서버(t3.micro)에서 돌릴 수 없었습니다.
-
-**✅ 해결**
-
-- 자체 수집 **PostgreSQL OHLCV 데이터 공급자** 추가 (식별자 검증으로 SQL 인젝션 차단)
-- 불완전한 벤치마크 곡선을 결과에서 제외하고 단계별 실행 시간 로깅 → 백테스트 결과 신뢰성 확보
-- **웹은 EC2, 백테스트는 로컬 PC**에서 실행하고 SSH 역터널로 연결하는 하이브리드 구조, nginx 단일 포트 + systemd 배포 자동화
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
-![LEAN](https://img.shields.io/badge/QuantConnect%20LEAN-F5AE29?style=flat)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![nginx](https://img.shields.io/badge/nginx-009639?style=flat&logo=nginx&logoColor=white)
-![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat&logo=amazonec2&logoColor=white)
-
-### 3. [Kiwoom RSI Auto Trader](https://github.com/zhanggu9/KORStockScan-main/blob/main/docs/portfolio/kiwoom-rsi-trader-case-study.md) — 멀티 전략 틱 매매 엔진 (설계 기록)
+### 4. [Kiwoom RSI Auto Trader](https://github.com/zhanggu9/KORStockScan-main/blob/main/docs/portfolio/kiwoom-rsi-trader-case-study.md) — 멀티 전략 틱 매매 엔진 (설계 기록)
 
 `2026` `1인 개발` `설계 · 개발` `소스 비공개`
 
@@ -91,18 +103,6 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=flat&logo=qt&logoColor=white)
 ![pytest](https://img.shields.io/badge/pytest-280%2B%20tests-0A9EDC?style=flat&logo=pytest&logoColor=white)
-
-### 4. [lumina](https://github.com/zhanggu9/lumina-backup) — 금융 AI 에이전트 웹앱
-
-`2026` `AI퀀트 과정` `풀스택`
-
-> ReAct 챗봇, LightGBM/MLP 퀀트 신호·백테스트, Qdrant RAG 문서 검색을 하나의 웹앱으로 — 화면부터 API·배포까지 풀스택 구현
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
-![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ---
 
