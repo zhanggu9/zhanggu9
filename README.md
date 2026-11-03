@@ -56,11 +56,11 @@
 ![nginx](https://img.shields.io/badge/nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat&logo=amazonec2&logoColor=white)
 
-### 2. [lumina](https://github.com/zhanggu9/lumina-backup) — 금융 AI 에이전트 웹앱
+### 2. [lumina-invest](https://github.com/zhanggu9/lumina-invest) — 금융 AI 에이전트 웹앱
 
-`2026` `AI퀀트 과정` `풀스택`
+`2026` `AI퀀트 과정 프로젝트` `풀스택`
 
-> ReAct 챗봇, LightGBM/MLP 퀀트 신호·백테스트, Qdrant RAG 문서 검색을 하나의 웹앱으로 — 화면부터 API·배포까지 풀스택 구현
+> ReAct 챗봇, LightGBM/MLP 퀀트 신호·백테스트, Qdrant RAG 문서 검색을 하나로 묶은 웹앱 — 화면부터 API·배포까지 풀스택으로 다뤄본 과정 프로젝트
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
