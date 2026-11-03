@@ -1,6 +1,6 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=YOUNGCHAE%20LIM&fontSize=56&fontColor=ffffff&fontAlignY=36&desc=Portfolio%20Manager%20%C3%97%20Quant%20%C3%97%20Trading%20Systems&descSize=18&descAlignY=58&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=YOUNG-CHAE%20LIM&fontSize=56&fontColor=ffffff&fontAlignY=36&desc=Portfolio%20Manager%20%C3%97%20Quant%20%C3%97%20Trading%20Systems&descSize=18&descAlignY=58&animation=fadeIn" width="100%" />
 
-# 임영채 (Youngchae Lim)
+# 임영채 (Young-Chae Lim)
 
 **펀드를 운용하던 사람이, 이제는 운용 시스템을 직접 만듭니다.**
 
