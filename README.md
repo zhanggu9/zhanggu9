@@ -21,7 +21,7 @@
 - 💼 **Fund Management** — 공모주·코넥스하이일드 펀드 책임운용, 운용사 설립 인가 실무, 투자조합 운용·투자심사
 - 📈 **Quant & Trading** — 키움·한국투자증권 API로 실계좌 자동매매 엔진을 직접 운영, LEAN 백테스트 플랫폼 구축
 - 🧠 **ML & AI** — LightGBM·XGBoost 신호 모델, LLM 진입·보유 판단을 쓰되 주문 권한은 hard safety guard 뒤에 둠
-- 🛠 **How I build** — AI 코딩 에이전트(Claude Code 등)와 함께 개발합니다. 범위·설계 결정·검증 기준과 테스트는 제가 정하고 책임집니다
+- 🛠 **How I build** — AI 코딩 에이전트(Claude Code, Codex, MCP 등)와 함께 개발합니다. 범위·설계 결정·검증 기준과 테스트는 제가 정하고 책임집니다
 
 ## 🔭 What I'm doing now
 
