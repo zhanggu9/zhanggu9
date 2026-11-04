@@ -37,7 +37,7 @@
 
 ### 1. [LIMSON](https://github.com/zhanggu9/limson) — 전략 빌더 · LEAN 백테스트 플랫폼
 
-`2026` `개인 프로젝트` `백엔드 · 인프라`
+`2026` `팀 프로젝트` `백엔드 · 인프라`
 
 > 한국투자증권 공식 전략 빌더·LEAN 백테스터를 자체 OHLCV DB와 저사양 클라우드 환경에 맞게 확장
 
@@ -94,7 +94,7 @@
 
 ### 4. [Kiwoom RSI Auto Trader](https://github.com/zhanggu9/KORStockScan-main/blob/main/docs/portfolio/kiwoom-rsi-trader-case-study.md) — 멀티 전략 틱 매매 엔진 (설계 기록)
 
-`2026` `1인 개발` `설계 · 개발` `소스 비공개`
+`2026` `개인 프로젝트` `설계 · 개발` `소스 비공개`
 
 > 키움 OpenAPI+ 실시간 틱을 집계해 전략 10종을 교체 가능하게 돌리는 엔진. KORStockScan의 전신
 
