@@ -25,8 +25,9 @@
 
 ## 🔭 What I'm doing now
 
-- **KORStockScan** 실계좌 스캘핑 엔진 운영 — 매일 장후 리포트로 다음 장전 정책을 bounded 갱신
+- **LIMSON** 팀 프로젝트 — 전략 빌더 · QuantConnect LEAN 백테스트 플랫폼
 - 이스트소프트 **AI퀀트 과정** 수강 중 (2026.06 ~ 11) — 글로벌 ETF 자산배분 로보어드바이저 (평균분산·Risk Parity, walk-forward 백테스트)
+- **KORStockScan** 스캘핑 엔진 운영 — 매일 장후 리포트로 다음 장전 정책을 bounded 갱신
 
 ---
 
