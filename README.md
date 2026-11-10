@@ -25,8 +25,8 @@
 
 ## 🔭 What I'm doing now
 
-- **LIMSON** 팀 프로젝트 — 전략 빌더 · QuantConnect LEAN 백테스트 플랫폼
-- 이스트소프트 **AI퀀트 과정** 수강 중 (2026.06 ~ 11) — 글로벌 ETF 자산배분 로보어드바이저 (평균분산·Risk Parity, walk-forward 백테스트)
+- **LIMSON** 팀 프로젝트 — 전략 빌더 · QuantConnect LEAN 백테스트 플랫폼 · Optuna TPE 하이퍼옵트 최적화 튜닝
+- 이스트소프트 **AI퀀트 과정** 수료 (2026.06 ~ 11) — 글로벌 ETF 자산배분 로보어드바이저 (평균분산·Risk Parity, walk-forward 백테스트)
 - **KORStockScan** 스캘핑 엔진 운영 — 매일 장후 리포트로 다음 장전 정책을 bounded 갱신
 
 ---
@@ -63,7 +63,7 @@
 
 `2026` `AI퀀트 과정 프로젝트` `풀스택`
 
-> ReAct 챗봇, LightGBM/MLP 퀀트 신호·백테스트, Qdrant RAG 문서 검색을 하나로 묶은 웹앱 — 화면부터 API·배포까지 풀스택으로 다뤄본 과정 프로젝트
+> ReAct 챗봇, LightGBM/MLP 퀀트 신호·백테스트, Qdrant RAG 문서 검색을 하나로 묶은 웹앱 — 화면부터 API·배포까지 풀스택 과정 프로젝트
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
@@ -73,7 +73,7 @@
 
 ### 3. [KORStockScan](https://github.com/zhanggu9/KORStockScan-main) — 실계좌 스캘핑 자동매매 엔진
 
-`2026` `1인 개발` `설계 · 개발 · 운영` `실계좌 운용 중`
+`2026` `1인 개발` `설계 · 개발 · 운영`
 
 > 시장 스캔 → AI 판단 → 주문 가드 → 분할 진입·청산 → 장후 자동 튜닝까지 하나의 lifecycle로 연결한, 매일 데이터로 스스로 보정되는 매매 엔진
 
@@ -97,9 +97,9 @@
 
 ### 4. [Kiwoom RSI Auto Trader](https://github.com/zhanggu9/KORStockScan-main/blob/main/docs/portfolio/kiwoom-rsi-trader-case-study.md) — 멀티 전략 틱 매매 엔진 (설계 기록)
 
-`2026` `개인 프로젝트` `설계 · 개발` `소스 비공개`
+`2026` `개인 프로젝트` `설계 · 개발`
 
-> 키움 OpenAPI+ 실시간 틱을 집계해 전략 10종을 교체 가능하게 돌리는 엔진. KORStockScan의 전신
+> 키움 OpenAPI+ 실시간 틱을 집계해 전략 10종을 교체 가능하게 돌리는 엔진.
 
 **✅ 핵심** — Clean Architecture로 증권사 API를 포트 뒤에 분리해 실계좌 없이 테스트 · 주문/TR 큐 분리 + 단일 워커 직렬화 · 슬라이딩 윈도우 rate limiter · 틱 폭주 시 샤드 큐 backpressure
 
@@ -125,7 +125,7 @@
 | 증권투자권유대행인 | 한국금융투자협회 | 2018.05 |
 | 벤처투자전문인력 | 한국벤처투자협회 | 2023.09 |
 | 외국환업무전문인력 | 금융투자교육원 | 2020.07 |
-| AI퀀트 과정 | 이스트소프트 | 2026.06 – 수강 중 |
+| AI퀀트 | 이스트소프트 | 2026.06 – 11 |
 
 ## 🛠 Tech Stack
 
