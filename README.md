@@ -48,11 +48,13 @@
 
 - 자체 수집 **PostgreSQL OHLCV 데이터 공급자** 추가 (식별자 검증으로 SQL 인젝션 차단)
 - 불완전한 벤치마크 곡선을 결과에서 제외하고 단계별 실행 시간 로깅 → 백테스트 결과 신뢰성 확보
+- **Optuna TPE 하이퍼옵트** — 전략의 지표 기간·조건 값·손절/익절 %를 자동으로 탐색 공간으로 뽑아 LEAN으로 4개씩 병렬 백테스트, 샤프·소르티노·칼마 등 목표로 최적 조합 탐색. 기간 뒤쪽을 검증 구간으로 떼어 상위 조합과 기본값을 다시 돌려 **과최적화 여부를 확인**
 - **웹은 EC2, 백테스트는 로컬 PC**에서 실행하고 SSH 역터널로 연결하는 하이브리드 구조, nginx 단일 포트 + systemd 배포 자동화
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![LEAN](https://img.shields.io/badge/QuantConnect%20LEAN-F5AE29?style=flat)
+![Optuna](https://img.shields.io/badge/Optuna-2C5BB4?style=flat)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![nginx](https://img.shields.io/badge/nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat&logo=amazonec2&logoColor=white)
